@@ -33,7 +33,7 @@ func main() {
 }
 ```
 
-In this example, odd_nums will be []int{1, 3}
+In this example, odd_nums will be `[]int{1, 3}`
 
 ## Installation
 
