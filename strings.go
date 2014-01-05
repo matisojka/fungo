@@ -88,7 +88,6 @@ func StringFind(strings []string, f func(string) bool) (s string, ok bool) {
   truth test (f) passes. The opposite of filter.
 
   Example:
-
     words := []string{"man", "woman", "child"}
     func longerThanThree(s string) bool {
       if len(s) > 3 {
@@ -190,7 +189,6 @@ func StringContain(strings []string, s string) bool {
   Returns a slice with all banned values removed.
 
   Example:
-
     words := []string{"man", "woman", "child"}
     banned_words := []string{"man", "woman"}
     allowed_words := fungo.StringWithout(words, banned_words)

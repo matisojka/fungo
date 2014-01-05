@@ -39,7 +39,6 @@ func (s *TestSuite) TestIntFilter(c *C) {
 }
 
 func (s *TestSuite) TestIntMap(c *C) {
-
 	double := func(a int) int {
 		return a * 2
 	}
