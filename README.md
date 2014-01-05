@@ -3,8 +3,8 @@
 ## Disclaimer
 
 This library is work in progress.
-For now, you can use it on slices of integers.
-There is no warranty that the API won't change.
+For now, you can use it on slices of integers and strings.
+There is no warranty that the API won't change (it shouldn't, though)
 
 ## Usage
 

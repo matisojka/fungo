@@ -31,14 +31,6 @@ var isFour = func(a int) bool {
 	return false
 }
 
-// Setup
-
-var elems []int
-func (s *TestSuite) SetUpTest(c *C) {
-  elems = []int{1, 2, 3}
-}
-
-
 // Tests
 
 func (s *TestSuite) TestIntFilter(c *C) {
