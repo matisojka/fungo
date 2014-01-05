@@ -2,8 +2,9 @@
 
 ## Disclaimer
 
-This library is work in progress, for now, you can use it on slices of integers.
-For now, there is no warranty that the API won't change.
+This library is work in progress.
+For now, you can use it on slices of integers.
+There is no warranty that the API won't change.
 
 ## Usage
 
