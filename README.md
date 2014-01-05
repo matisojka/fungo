@@ -23,7 +23,10 @@ And then, use the available functions in your code.
 ```go
 package testing_fungo
 
-import "github.com/yagooar/fungo"
+import (
+  "fmt"
+  "github.com/yagooar/fungo"
+)
 
 func main() {
   nums := []int{1, 2, 3}
