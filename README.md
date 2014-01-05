@@ -87,6 +87,8 @@ but rather a collection of tools for common Go types, like integers or strings.
 
 Go provides a set of tools for reflection, but it is known that using them
 can make the code slower than using explicit typing.
+You can read more on this topic here:
+http://blog.burntsushi.net/type-parametric-functions-golang
 
 ### What is Fungo good for?
 
