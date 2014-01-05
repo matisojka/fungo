@@ -6,6 +6,10 @@ This library is work in progress.
 For now, you can use it on slices of integers and strings.
 There is no warranty that the API won't change (it shouldn't, though)
 
+## Build status
+
+[![Build Status](https://travis-ci.org/yagooar/fungo.png?branch=master)](https://travis-ci.org/yagooar/fungo)
+
 ## Usage
 
 ### API Documentation
