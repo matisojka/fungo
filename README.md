@@ -8,15 +8,10 @@ There is no warranty that the API won't change (it shouldn't, though)
 
 ## Usage
 
-In a source file, import the Fungo package:
+### API Documentation
 
-```go
-package my_cool_project
-
-import "github.com/yagooar/fungo"
-```
-
-And then, use the available functions in your code.
+You can find the complete API documentation here:
+http://godoc.org/github.com/yagooar/fungo
 
 ### Example
 
