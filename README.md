@@ -13,6 +13,36 @@ There is no warranty that the API won't change (it shouldn't, though)
 You can find the complete API documentation here:
 http://godoc.org/github.com/yagooar/fungo
 
+These are some of the functions Fungo provides:
+
+```go
+func IntContain(ints []int, num int) bool
+func IntEvery(ints []int, f func(int) bool) bool
+func IntFilter(ints []int, f func(int) bool) (ret_ints []int)
+func IntFilterR(ints *[]int, f func(int) bool)
+func IntFind(ints []int, f func(int) bool) (elem int, ok bool)
+func IntMap(ints []int, f func(int) int) (ret_ints []int)
+func IntMapR(ints *[]int, f func(int) int)
+func IntReduce(ints []int, f func(int, int) int, memo int) int
+func IntReject(ints []int, f func(int) bool) (ret_ints []int)
+func IntRejectR(ints *[]int, f func(int) bool)
+func IntSome(ints []int, f func(int) bool) bool
+func IntWithout(ints []int, without_ints []int) (ret_ints []int)
+func IntWithoutR(ints *[]int, without_ints *[]int)
+func StringContain(strings []string, s string) bool
+func StringEvery(strings []string, f func(string) bool) bool
+func StringFilter(strings []string, f func(string) bool) (ret_strings []string)
+func StringFilterR(strings *[]string, f func(string) bool)
+func StringFind(strings []string, f func(string) bool) (s string, ok bool)
+func StringMap(strings []string, f func(string) string) (ret_strings []string)
+func StringMapR(strings *[]string, f func(string) string)
+func StringReject(strings []string, f func(string) bool) (ret_strings []string)
+func StringRejectR(strings *[]string, f func(string) bool)
+func StringSome(strings []string, f func(string) bool) bool
+func StringWithout(strings []string, without_s []string) (res []string)
+func StringWithoutR(strings *[]string, without_s *[]string)
+```
+
 ### Example
 
 ```go
