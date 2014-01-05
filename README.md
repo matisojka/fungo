@@ -56,7 +56,7 @@ go get github.com/yagooar/fungo
 ### What is this?
 
 Fungo is not intended to be a full-fledged functional extension for Go,
-but rather a collection of tools for common Go types, link integers or strings.
+but rather a collection of tools for common Go types, like integers or strings.
 
 ### Why isn't it generic?
 
