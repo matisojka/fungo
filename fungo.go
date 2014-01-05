@@ -6,7 +6,7 @@
 Fungo is a library that adds some functional goodness to Go.
 It provides some common functions on slices.
 
-It is not intended to be a full-fledged functional extension for Go,
+Fungo is not intended to be a full-fledged functional extension for Go,
 but rather a collection of tools for common Go types, link integers or strings.
 
 Why isn't it generic?
