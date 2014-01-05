@@ -1,4 +1,4 @@
-# Functional goodness to Go.
+# Functional goodness for Go.
 
 ## Usage
 
