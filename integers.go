@@ -28,7 +28,7 @@ func IntFilter(ints []int, f func(int) bool) (ret_ints []int) {
 }
 
 /*
-  Produces a new array of values by mapping each value in
+  Produces a new slice of values by mapping each value in
   the list through a transformation function (f).
 
   Example:
@@ -199,21 +199,18 @@ func IntSome(ints []int, f func(int) bool) bool {
   Example:
 
     nums := []int{1, 2, 3}
-    isOdd := func(a int) bool {
-      if a%2 != 0 {
-        return true
-      }
-      return false
-    }
+    contains := IntContain(nums, 2)
 
-    contains_odd := IntContains(nums, isOdd)
-
-    => contains_odd will be true
+    => contains will be true
 */
-func IntContains(ints []int, f func(int) bool) bool {
-  _, ok := IntFind(ints, f)
+func IntContain(ints []int, num int) bool {
+  for _, value := range(ints) {
+    if value == num {
+      return true
+    }
+  }
 
-  return ok
+  return false
 }
 
 /*

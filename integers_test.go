@@ -124,28 +124,27 @@ func (s *TestSuite) TestIntSomeFalse(c *C) {
 	c.Assert(some, Equals, false)
 }
 
-func (s *TestSuite) TestIntContainsTrue(c *C) {
-  contains := IntContains(elems, isThree)
-  c.Assert(contains, Equals, true)
+func (s *TestSuite) TestIntContainTrue(c *C) {
+	contains := IntContain(elems, 3)
+	c.Assert(contains, Equals, true)
 }
 
-func (s *TestSuite) TestIntContainsFalse(c *C) {
-  contains := IntContains(elems, isFour)
-  c.Assert(contains, Equals, false)
+func (s *TestSuite) TestIntContainFalse(c *C) {
+	contains := IntContain(elems, 4)
+	c.Assert(contains, Equals, false)
 }
 
 func (s *TestSuite) TestIntWithout(c *C) {
-  without_elems := []int{1, 2}
+	without_elems := []int{1, 2}
 
-  ret_elems := IntWithout(elems, without_elems)
-  c.Assert(ret_elems, DeepEquals, []int{3})
+	ret_elems := IntWithout(elems, without_elems)
+	c.Assert(ret_elems, DeepEquals, []int{3})
 }
 
 func (s *TestSuite) TestIntWithout2(c *C) {
-  elems = []int{1, 2, 2}
-  without_elems := []int{2}
+	elems = []int{1, 2, 2}
+	without_elems := []int{2}
 
-  ret_elems := IntWithout(elems, without_elems)
-  c.Assert(ret_elems, DeepEquals, []int{1})
+	ret_elems := IntWithout(elems, without_elems)
+	c.Assert(ret_elems, DeepEquals, []int{1})
 }
-
